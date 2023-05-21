@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentelella Alela! | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Dropzone.js -->
+    <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <!-- page content -->
+          <!-- formulario -->
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Reglas de asociación </h3>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-10  ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Empecemos...</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <p>Carga sólo un archivo de extensión csv. Recuerda que este debe tener datos transaccionales.</p>
+                    <form action="form_upload.html" class="dropzone"></form>
+                    <div class="x_content">
+                        <button type="button" class="btn btn-success">Enviar</button>
+      
+                      </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /formulario -->
+
+
+          <!-- SOPORTE MÍNIMO -->
+
+          <div class="row">
+
+
+            <div class="col-md-4 col-sm-4 ">
+              <div class="x_panel tile fixed_height_2">
+                <div class="x_title">
+                  <h2>Escribe el soporte mínimo (Ej. 0.45, 0.3)</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+        
+                    
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    
+                  <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+										<div class="item form-group">
+											<label class="col-form-label col-md-3 col-sm-3 label-align" for="Soporte mínimo">Soporte mínimo <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 ">
+												<input type="text" id="Soporte mínimo" required="required" class="form-control ">
+											</div>
+										</div>
+										
+										<div class="ln_solid"></div>
+										<div class="item form-group">
+											<div class="col-md-6 col-sm-6 offset-md-3">
+												<button type="submit" class="btn btn-success">Enviar</button>
+											</div>
+										</div>
+
+									</form>
+
+                </div>
+              </div>
+
+              
+            </div>
+            <!-- CONFIANZA MÍNIMA -->
+
+            <div class="col-md-4 col-sm-4 ">
+                <div class="x_panel tile fixed_height_2">
+                  <div class="x_title">
+                    <h2>Escribe la confianza mínimima (Ej. 0.2, 0.3, 0.4)</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+          
+                      
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                      
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+  
+                                          <div class="item form-group">
+                                              <label class="col-form-label col-md-3 col-sm-3 label-align" for="Confianza mínimima">Confianza mínimima <span class="required">*</span>
+                                              </label>
+                                              <div class="col-md-6 col-sm-6 ">
+                                                  <input type="text" id="Confianza mínimima" required="required" class="form-control ">
+                                              </div>
+                                          </div>
+                                          
+                                          <div class="ln_solid"></div>
+                                          <div class="item form-group">
+                                              <div class="col-md-6 col-sm-6 offset-md-3">
+                                                  <button type="submit" class="btn btn-success">Enviar</button>
+                                              </div>
+                                          </div>
+  
+                                      </form>
+  
+                  </div>
+                </div>
+  
+                
+              </div>
+
+              <!-- ELEVACION  -->
+
+              <div class="col-md-4 col-sm-4 ">
+                <div class="x_panel tile fixed_height_2">
+                  <div class="x_title">
+                    <h2>Escribe la elevación deseada (Ej. 3, 4)</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+          
+                      
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                      
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+  
+                                          <div class="item form-group">
+                                              <label class="col-form-label col-md-3 col-sm-3 label-align" for=" Elevación deseada">Elevación deseada <span class="required">*</span>
+                                              </label>
+                                              <div class="col-md-6 col-sm-6 ">
+                                                  <input type="text" id=" elevación deseada" required="required" class="form-control ">
+                                              </div>
+                                          </div>
+                                          
+                                          <div class="ln_solid"></div>
+                                          <div class="item form-group">
+                                              <div class="col-md-6 col-sm-6 offset-md-3">
+                                                  <button type="submit" class="btn btn-success">Enviar</button>
+                                              </div>
+                                          </div>
+  
+                                      </form>
+  
+                  </div>
+                </div>
+  
+                
+              </div>
+
+              <div class="item form-group">
+                <div class="col-md-14 col-sm-6 offset-md-3">
+                    <button type="submit" class="btn btn-success">OK</button>
+                </div>
+            </div>
+
+          </div>
+        
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Dropzone.js -->
+    <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+  </body>
+</html>
