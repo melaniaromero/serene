@@ -20,8 +20,7 @@ def data():
             csvfile = csv.reader(file)
             for row in csvfile:
                 data.append(row)
-        return render_template('r_a1_asociacion.html' , data=data)
-                         
+        return render_template('r_a1_asociacion.html' , data=data)                         
 
 if __name__ == '__main__':
     app.run(debug=True)
