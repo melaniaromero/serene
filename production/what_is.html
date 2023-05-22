@@ -37,12 +37,77 @@
               <div class="col-md-12 col-sm-12  ">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Nuestra historia</h2>
+                    <h2>Algoritmo Apriori</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    
-                    Añadir contenido...
+                    El algoritmo Apriori es un algoritmo clásico de minería de datos utilizado para el descubrimiento de patrones frecuentes en conjuntos de datos. Fue propuesto por Rakesh Agrawal y Ramakrishnan Srikant en 1994 y se basa en el principio del apriori, que establece que si un conjunto de elementos es frecuente, entonces todos sus subconjuntos también son frecuentes.<br>
+
+                    El objetivo principal del algoritmo Apriori es encontrar todos los conjuntos de elementos (llamados conjuntos de ítems) que aparecen con una frecuencia igual o superior a un umbral de soporte predefinido en un conjunto de transacciones. Estos conjuntos de ítems frecuentes son utilizados posteriormente para generar reglas de asociación, que indican las relaciones entre diferentes elementos dentro de los datos.<br>
+
+                    El algoritmo Apriori opera en varias iteraciones, cada una de las cuales se centra en la generación de conjuntos de ítems candidatos y la evaluación de su frecuencia en las transacciones. A continuación, se describen los pasos principales del algoritmo:<br><br>
+
+                    Paso 1: Generación de conjuntos de ítems frecuentes de un solo ítem.<br>
+
+                    Se escanean las transacciones para contar la frecuencia de cada ítem individual.
+                    Los ítems que superan el umbral de soporte mínimo se consideran conjuntos de ítems frecuentes de tamaño 1.<br>
+                    Paso 2: Generación de conjuntos de ítems candidatos de tamaño k.<br>
+
+                    Se generan candidatos de tamaño k a partir de los conjuntos de ítems frecuentes de tamaño k-1.
+                    Para generar los candidatos, se realiza una operación de unión entre los conjuntos de ítems frecuentes de tamaño k-1.<br>
+                    Paso 3: Evaluación de la frecuencia de los conjuntos de ítems candidatos.<br>
+
+                    Se escanean las transacciones para contar la frecuencia de cada conjunto de ítems candidato.
+                    Los conjuntos de ítems candidatos que superan el umbral de soporte mínimo se consideran conjuntos de ítems frecuentes de tamaño k.<br>
+                    Paso 4: Repetición de los pasos 2 y 3 hasta que no se generen nuevos conjuntos de ítems frecuentes.<br><br>
+
+                    Una vez que se han encontrado todos los conjuntos de ítems frecuentes, se pueden generar reglas de asociación a partir de ellos. Estas reglas establecen las relaciones entre los conjuntos de ítems y pueden ayudar a descubrir patrones interesantes en los datos.<br>
+
+                    El algoritmo Apriori es ampliamente utilizado en diversas áreas, como el análisis de cestas de compra, recomendación de productos, análisis de datos de ventas, análisis de secuencias de ADN y más. Su eficiencia se puede mejorar utilizando técnicas como la poda y la reducción de búsqueda para evitar explorar conjuntos de ítems infrecuentes.<br>
+                  </div>
+                  <div class="x_title">
+                    <h2>Métricas de distancia</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    El algoritmo de métricas de distancia es un enfoque utilizado en la ciencia de datos y el aprendizaje automático para medir la similitud o la diferencia entre dos objetos o puntos de datos en un espacio multidimensional. Las métricas de distancia son fundamentales para muchas aplicaciones, como la clasificación de objetos, el agrupamiento y la recuperación de información.
+
+                    En su forma más básica, una métrica de distancia es una función matemática que toma dos puntos como entrada y devuelve un valor que representa la distancia o la diferencia entre ellos. Estas métricas se utilizan para cuantificar la similitud o la disimilitud entre los objetos en función de características o atributos específicos.<br>
+
+                    Existen diversas métricas de distancia que se utilizan comúnmente, algunas de las cuales son:<br><br>
+
+                    Distancia Euclidiana: Es la métrica de distancia más común y se basa en el teorema de Pitágoras. Calcula la distancia entre dos puntos en un espacio euclidiano utilizando las coordenadas de los puntos. Es especialmente útil cuando se trabaja con características continuas.<br>
+
+                    Distancia Manhattan: También conocida como distancia de la ciudad o distancia de taxicab, calcula la suma de las diferencias absolutas entre las coordenadas de dos puntos. Es adecuada para espacios donde las características son categóricas o discretas.<br>
+
+                    Distancia de Chebyshev: Esta métrica mide la distancia máxima entre las coordenadas de dos puntos. Es útil cuando se trabaja con características que tienen diferentes rangos o cuando se desea dar más peso a las dimensiones que difieren significativamente.<br>
+
+                    Coeficiente de correlación de Pearson: No es una métrica de distancia en el sentido estricto, sino una medida de la relación lineal entre dos variables. Cuantifica la similitud entre dos conjuntos de datos en términos de su correlación lineal.<br><br>
+
+                    La elección de la métrica de distancia depende del tipo de datos y del problema que se esté abordando. Al seleccionar una métrica de distancia, es importante considerar la naturaleza de los datos y las características específicas que se desean comparar.<br>
+
+                    Los algoritmos de métricas de distancia utilizan estas métricas para realizar operaciones como el cálculo de similitud, la búsqueda de vecinos más cercanos, la agrupación por similitud y la clasificación de patrones. Estos algoritmos juegan un papel fundamental en diversas áreas, como la recuperación de información, la visión por computadora, la bioinformática y muchas otras disciplinas donde se requiere el análisis de similitud o diferencia entre objetos o puntos de datos.
+                  </div>
+                  <div class="x_title">
+                    <h2>Clustering</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    El algoritmo de clustering, también conocido como algoritmo de agrupamiento, es una técnica de aprendizaje automático no supervisado utilizada para encontrar grupos o patrones similares en un conjunto de datos. Su objetivo principal es agrupar objetos o puntos de datos similares en categorías o clusters, donde los objetos dentro de un mismo cluster son más similares entre sí que con los objetos de otros clusters.
+
+                    El proceso de clustering implica dividir un conjunto de datos en subgrupos significativos basados en la similitud de sus características o atributos. A diferencia de otros algoritmos de aprendizaje automático, el clustering no requiere etiquetas o categorías predefinidas en los datos de entrada. En cambio, el algoritmo busca estructuras intrínsecas en los datos para agruparlos de manera coherente.<br>
+
+                    Existen diferentes enfoques y algoritmos de clustering, algunos de los más populares son:<br><br>
+
+                    K-means: Es uno de los algoritmos de clustering más utilizados. Agrupa los datos en k clusters, donde k es un número predefinido. Comienza seleccionando k centroides aleatorios y asigna cada punto de datos al centroide más cercano. Luego, actualiza los centroides y repite el proceso hasta que los centroides converjan.<br>
+
+                    DBSCAN: Es un algoritmo basado en densidad que agrupa los puntos de datos en función de su cercanía en el espacio. Identifica puntos centrales que tienen un número mínimo de vecinos dentro de una determinada distancia y expande clusters al conectarse con puntos vecinos. Es capaz de encontrar clusters de forma irregular y manejar ruido en los datos.<br>
+
+                    Agglomerative Hierarchical Clustering: Este enfoque construye una jerarquía de clusters utilizando un enfoque de "unir" o "agregar". Comienza considerando cada punto de datos como un cluster individual y luego fusiona iterativamente los clusters más cercanos hasta que se forme un único cluster. La jerarquía de clusters se puede visualizar como un dendrograma.<br>
+
+                    Gaussian Mixture Models (GMM): Este modelo asume que los datos se generan a partir de una mezcla de distribuciones gaussianas. Utiliza el algoritmo de Expectation-Maximization (EM) para estimar los parámetros de las distribuciones y asignar los puntos de datos a los clusters correspondientes. Puede capturar estructuras más complejas en los datos en comparación con K-means.<br><br>
+
+                    El clustering tiene diversas aplicaciones en campos como la segmentación de clientes, análisis de redes sociales, procesamiento de imágenes, bioinformática y muchos otros. Proporciona una forma de explorar y comprender la estructura subyacente de los datos sin necesidad de conocimiento previo o etiquetas.
                   </div>
                 </div>
               </div>
